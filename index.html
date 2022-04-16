@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style02.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="sec">1.9 s</h2>
+                <p>60 mph</p>
+            </div>
+            <div>
+                <h2 id="ran">200 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="maxs">396 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div class="line">
+
+            </div>
+            <div>
+                <h2 id="model">Model S</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var header=document.getElementById("header");
+        var ms=document.getElementById("models");
+        var m3=document.getElementById("model3");
+        var mx=document.getElementById("modelx");
+        var my=document.getElementById("modely");
+        var model=document.getElementById("model");
+        var sec=document.getElementById("sec");
+        var maxs=document.getElementById("maxs");
+        var ran=document.getElementById("ran");
+
+
+        ms.onclick=function(){
+            header.style.backgroundImage= "url(images/image-1.png)";
+            model.innerHTML="Model S";
+            sec.innerHTML="1.9 s"
+            ran.innerHTML="396 mi"
+            maxs.innerHTML="200 mph"
+        }
+        m3.onclick=function(){
+            header.style.backgroundImage= "url(images/image-2.png)";
+            model.innerHTML="Model 3";
+            sec.innerHTML="2.0 s"
+            ran.innerHTML="400 mi"
+            maxs.innerHTML="210 mph"
+        }
+        mx.onclick=function(){
+            header.style.backgroundImage= "url(images/image-3.png)";
+            model.innerHTML="Model X";
+            sec.innerHTML="2.1 s"
+            ran.innerHTML="410 mi"
+            maxs.innerHTML="230 mph"
+        }
+        my.onclick=function(){
+            header.style.backgroundImage= "url(images/image-4.png)";
+            model.innerHTML="Model Y";
+            sec.innerHTML="2.3 s"
+            ran.innerHTML="412 mi"
+            maxs.innerHTML="190 mph"
+        }
+
+    </script>
+</body>
+</html>
